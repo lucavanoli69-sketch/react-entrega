@@ -119,3 +119,165 @@ body {
   line-height: 1.5;
   margin: 0;
 }
+
+/* ItemList & Item */
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.item-card {
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+}
+
+.item-img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.item-title {
+  font-size: 1.1rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.item-price {
+  font-weight: bold;
+  color: #e53935;
+  margin-bottom: 1rem;
+}
+
+.item-detail-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.item-detail-btn:hover {
+  background-color: #555;
+}
+
+/* ItemDetail */
+.item-detail-container {
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  max-width: 800px;
+}
+
+.item-detail-card {
+  display: flex;
+  gap: 2rem;
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid #2a2a2a;
+}
+
+.item-detail-img {
+  width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.item-detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-detail-title {
+  font-size: 2rem;
+  margin: 0 0 1rem;
+}
+
+.item-detail-price {
+  font-size: 1.5rem;
+  color: #e53935;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.item-detail-desc {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* ItemCount */
+.item-count {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.controls button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.controls button:disabled {
+  background-color: #222;
+  color: #555;
+  cursor: not-allowed;
+}
+
+.count-display {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.add-btn:hover:not(:disabled) {
+  background-color: #f44336;
+}
+
+.add-btn:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.loader-container {
+  text-align: center;
+  margin-top: 4rem;
+}
